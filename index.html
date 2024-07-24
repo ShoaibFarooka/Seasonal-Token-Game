@@ -1,0 +1,310 @@
+<!doctype html>
+<html>
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+    </script>
+    <script src="main.js"></script>
+    <title>Home Page</title>
+    <style>
+        img {
+            width: 30px;
+            position: absolute;
+            left: 30px;
+        }
+
+        section {}
+
+        .YourTokens {
+            width: 50%;
+            padding: 5px;
+            text-align: center;
+
+            position: absolute;
+            height: 150px;
+            width: 300px;
+        }
+
+        .YourTokens img {
+            position: absolute;
+            left: 60px;
+        }
+
+        .RelativePrice {
+            width: 50%;
+            padding: 5px;
+            text-align: center;
+
+            position: absolute;
+            height: 150px;
+            width: 300px;
+
+            margin-left: 150px;
+        }
+
+        .Total {
+            width: 50%;
+            padding: 5px;
+            text-align: center;
+
+            position: absolute;
+            height: 150px;
+            width: 300px;
+
+            margin-top: 220px;
+        }
+
+        .Total img {
+            position: absolute;
+            left: 60px;
+        }
+
+        .Button{
+            width: 50%;
+            padding: 5px;
+            text-align: center;
+
+            position: absolute;
+            height: 150px;
+            width: 300px;
+
+            margin-top: 320px;
+        }
+
+
+
+        .Trade {
+            width: 50%;
+            padding: 5px;
+            text-align: center;
+
+            position: absolute;
+            height: 150px;
+            width: 300px;
+
+            margin-top: 280px;
+            margin-left: 350px;
+        }
+
+        .Trade img {
+            position: absolute;
+            left: 60px;
+        }
+
+        .For {
+            width: 50%;
+            padding: 5px;
+            text-align: center;
+
+            position: absolute;
+            height: 150px;
+            width: 300px;
+
+            margin-top: 280px;
+            margin-left: 600px;
+        }
+
+        .For img {
+            position: absolute;
+            left: 60px;
+        }
+
+        .Date {
+            width: 50%;
+            padding: 5px;
+            text-align: center;
+
+            position: absolute;
+            height: 150px;
+            width: 500px;
+
+            margin-top: 280px;
+            margin-left: 850px;
+        }
+
+        .Box {
+            width: 50%;
+            padding: 5px;
+            border: 2px solid black;
+            text-align: center;
+
+            position: absolute;
+            height: 150px;
+            width: 300px;
+
+            margin-top: 380px;
+            margin-left: 950px;
+        }
+
+        .Box button {
+            border: 2px solid black;
+            padding: 10px 32px;
+            margin-top: 20px;
+
+        }
+
+        .Chart {
+            width: 50%;
+            padding: 5px;
+            text-align: center;
+
+            position: absolute;
+            height: 200px;
+            width: 500px;
+
+            margin-top: 30px;
+            margin-left: 650px;
+        }
+
+
+    </style>
+</head>
+
+<div class="YourTokens">
+    <p>Your Tokens </p>
+    <div>
+        <img src="images/spring.jpg">
+        <input type="text" name="tokenSpring" id="tokenSpring" size="10" value="" readonly/>
+    </div>
+    <br>
+    <div>
+        <img src="images/summer.jpg">
+        <input type="text" name="tokenSummer" id="tokenSummer" size="10" value="" readonly/>
+    </div>
+    <br>
+    <div>
+        <img src="images/autumn.jpg">
+        <input type="text" name="tokenAutumn" id="tokenAutumn" size="10" value="" readonly/>
+    </div>
+    <br>
+    <div>
+        <img src="images/witner.jpg">
+        <input type="text" name="tokenWinter" id="tokenWinter" size="10" value="" readonly/>
+    </div>
+</div>
+
+<div class="RelativePrice">
+    <p>Relative Price </p>
+    <div>
+        <input type="text" name="priceSpring" id="priceSpring" size="10" value="" readonly/>
+    </div>
+    <br>
+    <div>
+        <input type="text" name="priceSummer" id="priceSummer" size="10" value="" readonly/>
+    </div>
+    <br>
+    <div>
+        <input type="text" name="priceAutumn" id="priceAutumn" size="10" value="" readonly/>
+    </div>
+    <br>
+    <div>
+        <input type="text" name="priceWinter" id="priceWinter" size="10" value="" readonly/>
+    </div>
+</div>
+
+<div class="Total">
+    <P>Total Tokens</P>
+    <div>
+        <img src="images/total.jpg">
+        <input type="text" name="tokenTotal" id="tokenTotal" size="10" value="" readonly/>
+    </div>
+</div>
+
+<div class="Button">
+    <div>
+        <Form>
+            <input type="image" src="images/start.jpg" width="30" id="startBtn">
+        </Form>
+        Start Trading
+    </div>
+
+    <div>
+        <Form>
+            <input Name="Pause" type="image" src="images/pause.jpg" width="30" id="pauseBtn">
+        </Form>
+        Pause Trading
+    </div>
+
+    <div>
+        <Form>
+            <input Name="Restart" type="image" src="images/resume.jpg" width="30" id="restartBtn">
+        </Form>
+        Restart Trading
+    </div>
+</div>
+
+<div class="Trade">
+    <p>Trade </p>
+    <div>
+        <img src="images/spring.jpg" id="springbtn" class="trade1">
+        <input type="text" class="tradeA" name="tradeSpring" id="tradeSpring" placeholder="Spring trades" size="10" value="" readonly/>
+    </div>
+    
+    <br>
+    <div>
+        <img src="images/summer.jpg" id="summerbtn" class="trade1">
+        <input type="text" class="tradeA" name="tradeSummer" id="tradeSummer" placeholder="Summer trades" size="10" readonly/>
+    </div>
+    <br>
+
+    <div>
+        <img src="images/autumn.jpg" id="autumnbtn" class="trade1">
+        <input type="text" class="tradeA" name="tradeAutumn" id="tradeAutumn" placeholder="Autumn trades" size="10" readonly />
+    </div>
+    <br>
+
+    <div>
+        <img src="images/witner.jpg"  id="winterbtn" class="trade1">
+        <input type="text" class="tradeA" name="tradeWinter" id="tradeWinter" placeholder="Winter trades" size="10" readonly/>
+    </div>
+
+</div>
+
+<div class="For">
+    <p>For </p>
+    <div>
+        <img src="images/spring.jpg" id="forspring" class="trade2">
+        <input type="text" class="tradeA" name="tradeforSpring" id="tradeforSpring" placeholder="Spring trade for" size="10" readonly/>
+    </div>
+    <br>
+
+    <div>
+        <img src="images/summer.jpg" id="forsummer" class="trade2">
+        <input type="text" class="tradeA" name="tradeforSummer" id="tradeforSummer" placeholder="Summer trade for" size="10" readonly/>
+    </div>
+    
+    <br>
+    <div>
+        <img src="images/autumn.jpg" id="forautumn" class="trade2">
+        <input type="text" class="tradeA" name="tradeforAutumn" id="tradeforAutumn" placeholder="Autumn trade for" size="10" readonly/>
+    </div>
+    <br>
+    <div>
+        <img src="images/witner.jpg" id="forwinter" class="trade2">
+        <input type="text" class="tradeA" name="tradeforWinter" id="tradeforWinter" placeholder="Winter trade for" size="10" readonly/>
+    </div>
+</div>
+
+<div class="Date">
+    <p>Date</p>
+    <input type="text" name="date" id="date" value="" size="10" />
+</div>
+
+<div class="Box">
+
+    <textarea id="freeform" name="freeform" rows="5" cols="35">
+        
+    </textarea>
+    <br>
+    <button type="button" id="executebtn">Execute Trade</button>
+</div>
+
+<div class="Chart">
+    
+    <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
+
+</div>
+
+</body>
+
+</html>
